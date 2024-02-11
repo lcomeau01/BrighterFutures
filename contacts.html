@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brighter Futures Legal Advocates</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+<!-- Style Sheet -->
+<style>
+* { 
+    margin: 0px; 
+    font: copperplate; 
+}
+
+body { 
+    height: 100%; 
+}
+
+.Page-Header { 
+    width: 100%;
+    background-color: #3d5169;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: fixed; 
+    max-height: 135px;
+}
+
+.Page-Header .logo { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 10px; 
+}
+
+.Page-Header .logo h1 { 
+    display: flex; 
+    align-items: center;
+    font-family: 'Kulo Free Version', sans-serif;
+    color: white;
+    font-size: 60px; 
+}
+
+.Page-Header .logo img {  
+    max-width: 100px; }
+.Navigation-Bar{ 
+    width: 100%; 
+    display: flex; 
+    text-align: center;
+    justify-content: space-evenly; 
+    height: 40px;}
+
+.Navigation-Bar, ul { 
+    overflow: hidden; 
+    padding: 0px; 
+}
+
+.Navigation-Bar, li { 
+    padding-top: 10px; 
+    display: flex;
+    display: flex; 
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.Navigation-Bar a { 
+    text-decoration: none;
+    color: white; 
+    font-family: 'Kulo Free Version', sans-serif;
+    font-size: 25px;
+}
+
+.Navigation-Bar a:hover { 
+    color: #d0e3f9; 
+}
+
+/* footer */
+
+.footer-area { 
+    min-height: 100%;
+    height: 100%;
+}
+
+footer { 
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d5169; 
+    color: white; 
+    bottom: 0px; 
+    width: 100%; 
+}
+
+
+
+.contact-us { 
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center; 
+}
+    
+.contact-us .blurb { 
+    background-color: #7598c1;
+    height: 250px; 
+    width: 80%; 
+    border-radius: 50px;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 50px; 
+    color: white; 
+    max-width: 900px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.contact-us .blurb h1, h3 { 
+    font-family: 'Kulo Free Version', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #3d5169; 
+    font-size: 40px;
+}
+
+.contact-details { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contact-details p, .contact-details a{ 
+    color: black; 
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-details #contact-info { 
+    margin-bottom: 20px;
+    padding-right: 90px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details #contact-form { 
+    border: dashed  #3d5169 8px;
+    border-radius:  50px;
+    height: 500px; 
+    width: 80%; 
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 70px; 
+}
+
+.contact-details #contact-form #give-me-your-info { 
+    box-sizing: border-box;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%; 
+    align-items: center;
+    align-content: space-around;
+    font-size: 30px;
+    color: #3d5169; 
+    font-family: 'Kulo Free Version', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-details #contact-form #give-me-your-info input { 
+        width: 100%; 
+        height: 10%; 
+        border: solid #7598c1 5px; 
+        border-radius: 10px;
+}
+
+.contact-details #contact-form #give-me-your-info textarea { 
+        width: 100%; 
+        height: 80%; 
+        border: solid #7598c1 5px; 
+        border-radius: 10px;
+        font: copperplate; 
+        max-height: 100px;
+}
+
+.contact-details #contact-form #give-me-your-info input[type=submit] { 
+        width: 30%; 
+        height: 10%; 
+        border: solid #3d5169 5px; 
+        border-radius: 10px;
+        background-color: #d0e3f9;
+        color: #3d5169; 
+        font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) { 
+    .contact-us .blurb { 
+        height: auto !important;
+        padding: 20px 20px;
+    }
+    .contact-us .blurb h1 { 
+        padding-top: 10px;
+    }
+    .contact-details { 
+        flex-direction: column;
+    }
+    .contact-details h3 { 
+        padding-top: 0px;
+    }
+    .contact-details #contact-info { 
+        padding-right: 0px;
+    }
+    .contact-details #contact-form { 
+        max-width: none;
+        width: 65%;
+    }
+    .contact-details #contact-form #give-me-your-info { 
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .contact-details #contact-form { 
+        width: 70%;
+        padding: 20px;
+    }
+    .contact-us .blurb { 
+        margin-bottom: 15px;
+    }
+    .contact-details #contact-form #give-me-your-info { 
+        width: 100%;
+        max-width: none;
+    }
+}
+
+</style>
+<!-- Style Sheet -->
+
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header class="Page-Header">
+        <section class="logo">
+            <!-- import font for header -->
+            <link href="https://fonts.cdnfonts.com/css/kulo-free-version" 
+            rel="stylesheet">
+            <!-- Actual Header Now  -->
+            <h1> brighter </h1>
+            <img src="images/logowhite.png" />
+            <h1> futures </h1>
+        </section>
+        <ul class="Navigation-Bar">
+            <li> <a href="index.html">Our Mission</a> </li>
+            <li> <a href="team.html">Our Team</a> </li>
+            <li> <a href="contacts.html">Contact Us</a> </li>
+        </ul>
+    </header>
+
+    <!-- Contact Information Blurb -->
+    <section class="contact-us">
+        <section class="blurb">
+            <h1> Contact Us </h1>
+            <p> Your journey towards justice and advocacy begins here. Whether 
+                you have questions about our legal services, seek assistance 
+                for a specific case, or are eager to join us in our mission to 
+                fight for the rights of children in foster care, we welcome your 
+                inquiry.
+            </p>
+            <p> Our dedicated team at Brighter Futures Legal Advocates is here 
+                to provide the support and information you need. Feel free to 
+                reach out to us directly using the contact details below or use the 
+                contact form to get in touch with us and share your message. 
+                Every interaction is an opportunity to make a positive impact,
+                and we look forward to hearing from you.
+            </p>
+        </section>
+
+        <!-- Actual Contact Details -->
+        <section class="contact-details">
+            <!-- Direct Contact Information -->
+            <section id="contact-info">
+                <h3> Contact Information </h3>
+                <p> Brighter Futures Legal Advocates </p>
+                <p> 555 Main St. Belmont MA </p>
+                <a href="tel:555-555-5555" id="phone-num"> 555-555-5555 </a>
+                <a href="mailto:contactus@brighterfuture.org" id="email"> 
+                    contactus@brighterfuture.org 
+                </a>
+            </section>
+            <!-- Contact Form  -->
+            <section id="contact-form">
+                <form method="get" action="#" id="give-me-your-info">
+                    <label for="phone"> Phone Number </label>
+                    <input type="tel" placeholder="555-555-5555" name="phone">
+
+                    <label for="email"> Email </label>
+                    <input type="email" placeholder="email@brighterfutures.org"
+                    name="email">
+
+                    <label for="message"> Message </label>
+                    <textarea id="message"> Enter Your Message Here</textarea> 
+
+                    <input type="submit" value="Send"/>
+                </form>
+            </section>
+        </section>
+    </section>
+    
+
+    <!-- Footer -->
+    <section class="footer-area">
+        <footer>
+            <p> Brighter Futures Legal Advocates &copy 2011</p>
+        </footer>
+    </section>
+</body>
+</html>
