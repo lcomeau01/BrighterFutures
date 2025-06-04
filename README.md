@@ -1,14 +1,18 @@
 # 💡 BrighterFutures
-A mock static website for a non-profit law firm named Brighter Futures Legal Advocates, who help advocate for the rights of kids in foster care. 
 
-## Index.Html 
-This is the html file for the main page which is named "Our Mission". It references the external stylesheet (styles.css), includes the mission statement, some stats for the firm, and a newsletter form where you can sign up for our emailed newsletter. 
+A mock static website built for **Brighter Futures Legal Advocates**, a fictional nonprofit law firm dedicated to protecting the rights of children in foster care. This project was created to practice HTML structure, basic design, and both external and internal CSS styling. **This website is Mobile / Window Size Responsive**
 
-## Team.Html 
-This is the html file for the "Our Team" page. It references the external stylesheet (styles.css), includes the teammemebers pictures (taken from unsplash), a description of their job, and the story of the founding of Brighter Futures. 
+## File Overview 
+### `index.html`  
+The homepage titled **"Our Mission"** introduces the firm's goals, highlights key impact statistics, and includes a newsletter sign-up form. This page references the shared stylesheet (`styles.css`).
 
-## Contact.Html: 
-This is the html file for the "Contact Us" page. It includes an internal stylesheet, a contact information form, and the information needed to reach out to the firm. 
+### `team.html`  
+The **"Our Team"** page showcases staff members with images (from Unsplash), job descriptions, and a short narrative on the organization's founding. It also references the shared `styles.css`.
 
-## Styles.css 
-The stylesheet for both Index.html and Team.html 
+###  `contact.html`  
+The **"Contact Us"** page contains an internal stylesheet and a contact form, along with all the necessary contact information for reaching the firm.
+
+### `styles.css`  
+The external stylesheet used by both `index.html` and `team.html`, providing consistent layout, typography, and responsive design elements.
+
+
