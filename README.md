@@ -1,5 +1,5 @@
-# BrighterFutures
-A mock website for a non-profit law firm named Brighter Future Legal Advocates, who help advocate for the rights of kids in foster care. 
+# 💡 BrighterFutures
+A mock static website for a non-profit law firm named Brighter Futures Legal Advocates, who help advocate for the rights of kids in foster care. 
 
 ## Index.Html 
 This is the html file for the main page which is named "Our Mission". It references the external stylesheet (styles.css), includes the mission statement, some stats for the firm, and a newsletter form where you can sign up for our emailed newsletter. 
